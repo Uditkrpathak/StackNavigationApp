@@ -4,7 +4,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 
 const PlanList = () => {
   return (
-    <View>
+    <View style={styles.container} >
       <Text style={styles.sectionTitle}>Your Plan</Text>
       <View style={styles.planContainer}>
         
@@ -50,10 +50,15 @@ const PlanList = () => {
 };
 
 const styles = StyleSheet.create({
+                container:{
+                                marginHorizontal:10,
+                                marginTop:15,
+                },
   sectionTitle: {
     fontSize: 20,
     fontWeight: "600",
     marginBottom: 12,
+    marginLeft:10,
     color: "#1E1E1E",
   },
   planContainer: {
